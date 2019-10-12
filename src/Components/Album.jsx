@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import {connect} from 'react-redux'
 import { handleAddToPlayList } from '../actions';
+import {Link} from 'react-router-dom';
 
 const mapStateToProps = state => state;
 
@@ -64,6 +65,7 @@ class Album extends React.Component {
     return (
       <>
         <div id="AlbumImg" class="row centering">
+          <Link to='/Playlist'>CLICK HERE</Link>
           <div class="container mb-3">
             <div class="row no-gutters " id="myContainer">
               {this.state.Album && (
